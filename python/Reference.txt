@@ -1,0 +1,5 @@
+Tutorials:
+https://www.tutorialspoint.com/python/index.htm
+
+Program Practice:
+https://www.w3resource.com/python-exercises/
