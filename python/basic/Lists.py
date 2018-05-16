@@ -70,17 +70,24 @@ for i in str_list:
 		print('e exists in ',i);
 	else:
 		print('e doesn\'t exists in ',i);
-		
+
+#Reverse List		
 print();print('Reverse the list');
 print('Current list: ',num_list);
 num_list.reverse();
 print('Reversed list: ',num_list);
 
+#Sort List
 print();print('Sort the list');
 print('Current list: ',num_list);
 num_list.sort();
 print('Sorted list: ',num_list);
 
+#Clear List
+print();print('Clear the list');
+print('Current list: ',num_list);
+num_list.clear();
+print('Cleared list: ',num_list);
 
 #Deleting list to free up the memory
 del num_list; del str_list; del alpha_list;
