@@ -9,6 +9,8 @@ print();print('Structured Time: ',struct_time);
 #import user defined module, function.py in this case:
 import functions
 print();print("Import functions command executes everything above from function.py. In order to avoid this, we import only specific function from function module.");
+content = dir(functions);
+print("Content from functions: ", content);
 
 from functions import sum;
 print();print("We just imported sum from functions, and nothing else was executed.");
