@@ -29,3 +29,47 @@ jo = open("new_sample.txt");
 str = jo.read();
 print("Contents of the file: ", str);
 jo.close();
+
+fo = open("new_sample.txt", "w");
+fo.write("0123456789abcdef");
+fo.close();
+jo = open("new_sample.txt");
+str = jo.read(5);
+print("First 5 digits from the file: ", str);
+str = jo.read(5);
+print("Next 5 digits from the file: ", str);
+print("Current cursor position: ",jo.tell());
+jo.seek(5,0);
+print("New cursor position: ",jo.tell());
+jo.close();
+
+#OS Module - Remane and delete a file
+import os;
+print();print("File above created was new_sample.txt. We will open the file and check the name:");
+fo = open("new_sample.txt");
+print("Name of the file: ",fo.name);
+#os.rename("new_sample.txt","new_filename.txt");	#This line throws error as we are trying to rename an opened file.
+fo.close();
+os.rename("new_sample.txt","new_filename.txt");	#This will work now as we have closed the file in previous command.
+print("File name changed from new_sample.txt to new_filename.txt. Now we will try to access the file with the old name, which we will throw an error.");
+#fo = open("new_sample.txt");	#This throws an error as file name changed.
+fo = open("new_filename.txt");
+print("New filename is: ", fo.name);
+fo.close();
+
+#Delete all created files:
+os.remove("new_filename.txt");
+
+#Directories
+print();print("We will create a directory newdir now, then we will change the directory and and delete the directory after coming back out from the newdir.");
+#os.chdir("newdir");	#This must throw error as newerror doesn't exists.
+os.mkdir("newdir");
+str = os.getcwd();
+print("Current working directory is: ", str);
+os.chdir("newdir");
+str = os.getcwd();
+print("Current working directory is: ", str);
+os.chdir("..");
+os.rmdir("newdir");
+
+print();print("***END***");
