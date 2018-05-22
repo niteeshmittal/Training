@@ -72,4 +72,5 @@ print("Current working directory is: ", str);
 os.chdir("..");
 os.rmdir("newdir");
 
+print(os.listdir());
 print();print("***END***");
