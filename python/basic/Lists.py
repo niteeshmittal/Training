@@ -92,4 +92,14 @@ print('Cleared list: ',num_list);
 #Deleting list to free up the memory
 del num_list; del str_list; del alpha_list;
 
+#List of lists
+emp = [["Dave", "Pattric", "IT", 500000, 5],
+	   ["James", "Matthew", "HR", 2500000, 10]];
+print();print(emp);
+print(emp[0]);
+print(emp[1]);
+print(emp[0][1]);
+for i in range(0,len(emp)):
+	print(emp[i]);
+
 print();print('Program Over');

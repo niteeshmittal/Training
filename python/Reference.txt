@@ -1,8 +1,15 @@
-Tutorials:
+Python Tutorials:
 https://www.tutorialspoint.com/python/index.htm
+
+Python Data Structure Tutorials:
+https://www.tutorialspoint.com/python/python_data_structure.htm
 
 Program Practice:
 https://www.w3resource.com/python-exercises/
 
 Jupyter Notebook:
 https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46
+
+Python Classes and Understanding Object Oriented Programming:
+https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
+
