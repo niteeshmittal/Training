@@ -11,3 +11,5 @@ print(d[1:3]);
 print(d[2:]);
 print(d[:2]);
 print(d+" tests");
+print("Print {0} with format function and another variable as well: {1}".format(a,d));
+print(f"Print {a} directly in the print statemen using f command: {d}");

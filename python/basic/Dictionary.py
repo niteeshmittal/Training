@@ -17,6 +17,10 @@ print();print("Presenting Person's dictionary in a more appropriate way: ");
 for i in person:
 	print('%s of Person is: %s'% (i, person[i]));
 
+print();print("Presenting Person's dictionary in a more appropriate way: ");
+for i in person:
+	print("{0} of Person is: {1}".format(i, person[i]));
+	
 print();print('Printing only values from the dictionary using a loop:');
 for j in person.values():
 	print(j);
@@ -37,5 +41,14 @@ print('Deleted age with the key: ',person);
 print();print('String representation of the dictionary: ', str(person));
 
 print();print('Type of dictionary: ',type(person));
+
+#List of dictionaries
+person_list = [{'title':'mr','fname':'Pattrick','lname':'david','age':27,'org':'vodafone'},
+				{'title':'mr','fname':'Thomson','lname':'Dave','age':28,'org':'vodafone'}]
+
+print();print("List of dictionaries: Dictionary of two persons:{0}".format(person_list));
+
+print();print("dictionary 1 element: ", person_list[0]['fname']);
+print();print("dictionary 2 element: ", person_list[1]['fname']);
 
 print();print('Program Over');

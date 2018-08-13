@@ -27,7 +27,7 @@ print('New List (second element deleted): ',num_list);
 
 del num_list;
 print();print('Deleted complete num_lsit. If we try to print the num_list which existed till now, code throws an error: ');
-#Below line is commented because it halts the program
+#Below line is commented because num_list doesn't exists which thows and exception and it halts the program.
 #print(num_list);
 
 #Creating the deleted list

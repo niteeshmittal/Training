@@ -29,7 +29,20 @@ print();print("Function to test even odd number.");
 for i in range(1,11):
 	oddeven(i);
 	
-#Pass by reference test
+#Pass by reference test when the variable values is changed by the function even for the calling function
+def refpasstest(numlist):
+	"This function is to test the pass by reference value."
+	numlist.append(10); #It uses the passed value refrence and append 10 in the list
+	print("Num variable value inside function: ",numlist);
+	return;
+
+numlist=[4,5,6];
+print();print("Num variable value before calling function: ", numlist);
+refpasstest(numlist);
+print("Num variable value after calling function: ", numlist);
+del numlist;
+
+#Pass by reference test when the variable values remains the same in calling function
 def refpasstest(num):
 	"This function is to test the pass by reference value."
 	num = num + 10; #It uses the passed value and add 10 in the that, then assigns the results to the local variable with the same name.
@@ -77,4 +90,4 @@ asum = lambda num1, num2: num1 + num2;
 print();print("A annonymous function sum to get the sum of 10 and 20: ",asum(10, 20));
 print("Using same annonymous function sum to get the sum of 450 and 200: ",asum(450, 200));
 
-#
+print(); print("Program Over.");
