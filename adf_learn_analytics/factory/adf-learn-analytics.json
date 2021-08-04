@@ -1,0 +1,9 @@
+{
+	"name": "adf-learn-analytics",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f94f4e3c-6390-463a-93eb-3071a9c14de0",
+		"tenantId": "d677c13f-ee2c-4f97-96e1-5578b428899a"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "ADLS_analyticstoragegen2",
+	"properties": {
+		"description": "Linked Service for Azure Data Lake Storage Gen2 - analyticstoragegen2.",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://analyticstoragegen2.dfs.core.windows.net"
+		}
+	}
+}
